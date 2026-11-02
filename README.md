@@ -1,9 +1,11 @@
 # Kit de Gráficos e Tabelas – Carta Mensal (Top Gestor)
 
-Este kit cria **tabelas e gráficos** no estilo da carta mensal da Safra Asset (tabela de performance, atribuição de performance e evolução da rentabilidade).
-Você só precisa **preencher os CSVs da pasta `inputs/`** e rodar o script `gera_graficos_tabelas.py` (ou executar o notebook que preferir com o mesmo código).
+Template em Python (pandas + matplotlib + python-pptx) que monta uma carta mensal de fundo: tabela de performance (fundo vs CDI, %CDI e volatilidade), atribuição de performance do mês e evolução da rentabilidade, e exporta tudo para `.xlsx`, `.png` e `.pptx`.
+Você preenche os CSVs da pasta `inputs/` e roda o script `gera_graficos_tabelas.py`.
 
-> Observação: os gráficos são gerados com **matplotlib** (sem seaborn), **um gráfico por figura** e **sem definir cores específicas**, conforme solicitado.
+> **Status:** os arquivos em `inputs/` são apenas placeholders. O script precisa de dados reais (formato abaixo) e não roda de ponta a ponta com o conteúdo atual. Dependências: `pip install pandas numpy matplotlib openpyxl python-pptx`.
+
+Os gráficos usam **matplotlib** (sem seaborn), um gráfico por figura e as cores padrão.
 
 ## Passo a passo
 
@@ -90,5 +92,3 @@ Você só precisa **preencher os CSVs da pasta `inputs/`** e rodar o script `ger
 - Um gráfico por figura.
 - Sem definir cores específicas (usar padrão do matplotlib).
 - Títulos e rótulos objetivos, eixos com percentuais quando pertinente.
-
-Bom trabalho e bons resultados no Top Gestor! ⚑
